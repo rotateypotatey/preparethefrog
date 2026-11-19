@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Special+Elite&display=swap');
+#frog-truth { --red:#b91d20; --ink:#221c18; --paper:#e8dfc7; --cork:light-dark(#8d6240,#523c2a); font-family:'Special Elite','Courier New',monospace; }
+#frog-truth * { box-sizing:border-box; }
+#frog-truth .room { background:var(--cork); color:var(--ink); position:relative; overflow:hidden; background-image:radial-gradient(#24180e30 .7px,transparent .8px),radial-gradient(#e9b98e25 1px,transparent 1.5px); background-size:5px 7px,13px 11px; padding:22px 26px 26px; }
+#frog-truth header { background:#e9dfc5; display:flex; justify-content:space-between; align-items:center; gap:20px; padding:12px 18px; border-bottom:5px double var(--ink); box-shadow:1px 3px 7px #160e0a55; transform:rotate(-.6deg); }
+#frog-truth .brand { font:900 26px/.9 'Barlow Condensed',Impact,sans-serif; letter-spacing:-.5px; }
+#frog-truth .edition { font-size:10px; line-height:1.5; text-align:right; letter-spacing:1px; }
+#frog-truth .board { position:relative; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1fr); gap:20px; align-items:center; padding:34px 2px 26px; }
+#frog-truth .strings { position:absolute; width:100%; height:100%; inset:0; overflow:visible; pointer-events:none; }
+#frog-truth .strings line { stroke:#a20f17; stroke-width:3px; filter:drop-shadow(1px 2px 1px #2d130a70); }
+#frog-truth .scrap { background:var(--paper); padding:16px; box-shadow:3px 5px 5px #21160a70; position:relative; z-index:1; }
+#frog-truth .scrap:before { content:''; position:absolute; width:10px; height:10px; border-radius:50%; background:#b21f26; box-shadow:1px 2px 2px #18080699,inset 1px 1px 2px #f1a48d; left:50%; top:5px; }
+#frog-truth .left { display:grid; gap:30px; }
+#frog-truth .note-a { transform:rotate(-6deg); }
+#frog-truth .note-b { transform:rotate(4deg); background:#e5cf80; }
+#frog-truth .hero { transform:rotate(1.6deg); padding:27px 20px 23px; background:#eee6d3; }
+#frog-truth .hero:after { content:''; position:absolute; top:-12px; left:24%; width:45%; height:24px; background:#c0b08e90; transform:rotate(-4deg); }
+#frog-truth .eyebrow { font-size:10px; letter-spacing:1.7px; line-height:1.5; }
+#frog-truth h2 { font:900 clamp(38px,5.8vw,69px)/.9 'Barlow Condensed',Impact,sans-serif; letter-spacing:-1.5px; text-transform:uppercase; margin:14px 0; }
+#frog-truth h2 em { color:var(--red); font-style:normal; display:block; }
+#frog-truth .hero p { font-size:12px; line-height:1.6; margin:0; }
+#frog-truth .circled { display:inline-block; border:2px solid var(--red); border-radius:50%; padding:6px 8px; transform:rotate(-4deg); margin-top:16px; color:var(--red); font-size:12px; }
+#frog-truth h3 { margin:10px 0; font:800 24px/.98 'Barlow Condensed',Impact,sans-serif; text-transform:uppercase; }
+#frog-truth .scrap p { font-size:11px; line-height:1.5; margin:8px 0 0; }
+#frog-truth .underline { border-bottom:3px solid var(--red); }
+#frog-truth .track { width:100%; height:61px; position:relative; border:8px solid #312a23; border-radius:50%; margin:15px 0; transform:rotate(-12deg); }
+#frog-truth .track:before { content:''; position:absolute; inset:-5px; border:1px dashed #e3d7b9; border-radius:50%; }
+#frog-truth .track:after { content:'?'; position:absolute; right:18%; top:3px; color:var(--red); font:900 29px/1 Impact,sans-serif; background:var(--paper); }
+#frog-truth .right { display:grid; gap:28px; }
+#frog-truth .photo { transform:rotate(6deg); padding:12px 12px 18px; background:#eee7d9; }
+#frog-truth .photo .frame { background:#414839; height:146px; display:grid; place-items:center; overflow:hidden; position:relative; background-image:repeating-linear-gradient(0deg,transparent 0 2px,#0000000e 2px 3px); }
+#frog-truth .frog { width:111px; height:78px; background:#a1a477; border:2px solid #262e21; border-radius:45% 45% 30% 35%; position:relative; margin-top:40px; transform:rotate(-5deg); box-shadow:inset 0 -14px #737d57; }
+#frog-truth .eye { position:absolute; width:38px; height:34px; top:-15px; background:#a1a477; border-radius:50%; border:2px solid #262e21; }
+#frog-truth .eye.a { left:6px; } #frog-truth .eye.b { right:6px; }
+#frog-truth .eye:before { content:''; position:absolute; width:25px; height:13px; background:#ded8bb; border-top:4px solid #262e21; border-radius:45%; top:14px; left:4px; transform:rotate(-10deg); }
+#frog-truth .eye:after { content:''; position:absolute; width:5px; height:7px; border-radius:50%; background:#262e21; top:20px; left:16px; }
+#frog-truth .mouth { position:absolute; border-top:3px solid #262e21; width:65px; height:15px; border-radius:50%; bottom:9px; left:22px; }
+#frog-truth .foil { position:absolute; left:18px; top:-55px; width:75px; height:55px; background:conic-gradient(from 15deg,#b9bdbc,#eef1ec,#838e8b,#dce0d7,#a5acab); clip-path:polygon(44% 0,57% 36%,83% 58%,100% 95%,0 100%,18% 65%,32% 50%); z-index:2; }
+#frog-truth .photo p { text-align:center; font-size:12px; }
+#frog-truth .stamp { border:3px solid var(--red); padding:9px; font:800 22px/1 'Barlow Condensed',Impact,sans-serif; color:var(--red); text-align:center; transform:rotate(-8deg); background:#d7c6a4; }
+#frog-truth .file { background:#dfcfaa; padding:22px 24px 20px; box-shadow:3px 5px 8px #21160a70; position:relative; transform:rotate(-.5deg); }
+#frog-truth .file:before { content:'THEY CALL IT A BAD STRATEGY. WE CALL IT A PATTERN.'; display:block; font:800 17px/1.2 'Barlow Condensed',Impact,sans-serif; border-bottom:1px solid #6d5c43; padding-bottom:12px; margin-bottom:16px; letter-spacing:.4px; }
+#frog-truth .case-row { display:grid; grid-template-columns:1fr 1.5fr; gap:24px; }
+#frog-truth .evidence { font-size:12px; line-height:1.65; }
+#frog-truth .evidence b { display:block; font-size:10px; font-weight:400; letter-spacing:1px; color:#7d201d; margin-bottom:7px; }
+#frog-truth .theory { font:800 23px/1.05 'Barlow Condensed',Impact,sans-serif; text-transform:uppercase; margin:0; }
+#frog-truth .fine { font-size:11px; line-height:1.55; margin:10px 0 0; }
+#frog-truth .actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top:20px; }
+#frog-truth button { background:#a81920; border:0; color:#fff0d2; padding:14px 20px; min-height:46px; font:800 19px/1.1 'Barlow Condensed',Impact,sans-serif; letter-spacing:.5px; transform:rotate(-1deg); }
+#frog-truth button:focus-visible { outline:3px solid #3577bd; outline-offset:4px; }
+#frog-truth .aside { font-size:10px; line-height:1.5; max-width:220px; }
+#frog-truth footer { display:flex; justify-content:space-between; gap:12px; color:#f8e8cd; font-size:10px; padding-top:22px; line-height:1.5; }
+@media(min-width:850px) { #frog-truth .board { gap:28px; } #frog-truth .room { padding:25px 35px; } #frog-truth .photo .frame { height:166px; } }
+@media(max-width:600px) { #frog-truth .room { padding:15px 17px 20px; } #frog-truth header { padding:12px; } #frog-truth .brand { font-size:24px; } #frog-truth .edition { font-size:9px; max-width:115px; } #frog-truth .board { grid-template-columns:1fr 1fr; gap:24px 17px; padding-top:25px; } #frog-truth .hero { grid-column:1/-1; grid-row:1; transform:rotate(-1deg); } #frog-truth h2 { font-size:53px; } #frog-truth .left { gap:24px; } #frog-truth .right { gap:20px; } #frog-truth .scrap { padding:12px; } #frog-truth h3 { font-size:22px; } #frog-truth .stamp { font-size:20px; } #frog-truth .file { padding:19px 17px; } #frog-truth .case-row { grid-template-columns:1fr; gap:18px; } #frog-truth footer { flex-wrap:wrap; } }
+html { color-scheme: light; }
+body { margin: 0; background: #382b20; }
+#frog-truth { max-width: 1200px; margin: 0 auto; }
