@@ -1,76 +1,48 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Prepare the Frog</title>
-  <meta name="description" content="It is time. Prepare the frog.">
-  <meta name="keywords" content="ferrari doing bad time for the frog">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mynerve">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <script src="script.js"></script>
-  <style>
-    @media screen and (max-width: 767px) {
-      .hidden-mobile {
-        display: none !important;
-      }
-
-      #mood {
-        font-size: 40px !important;
-      }
-
-      .mainImg {
-        width: 100%;
-        height: unset !important;
-      }
-    }
-
-    #mood {
-      font-family: 'Mynerve';
-      font-size: 80px;
-      color: lightgray;
-      cursor: pointer;
-    }
-
-    .logos {
-      height: 25vh;
-    }
-
-    .mainImg {
-      height: 80vh;
-    }
-
-    .vertical {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8d6240">
+  <title>Prepare the Frog — The Maranello Truth Society</title>
+  <meta name="description" content="Ferrari already won. They just don't want you to know. Follow the red string into a Ferrari hopium conspiracy board.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ferrari already won. They just don't want you to know.">
+  <meta property="og:description" content="The Maranello Truth Society has the evidence. Do your own race search.">
+  <meta name="twitter:card" content="summary">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
-<body style="background-color: black">
-  <div id="everything" style="align-items: center; justify-content: center; display: none;">
-    <div style="display: flex; gap: 40px">
-      <div class="vertical hidden-mobile">
-        <img src="img/logo.gif" class="logos" />
-        <img src="img/logo.gif" class="logos" />
-        <img src="img/logo.gif" class="logos" />
-      </div>
-      <div class="vertical">
-        <img id="imgContainer" class="mainImg" />
-        <div id="mood">#mood</div>
-      </div>
-      <div class="vertical hidden-mobile">
-        <img src="img/logo.gif" class="logos" />
-        <img src="img/logo.gif" class="logos" />
-        <img src="img/logo.gif" class="logos" />
-      </div>
-    </div>
+<body>
+<div id="frog-truth">
+ <main class="room" aria-label="Prepare the Frog conspiracy board concept">
+  <header><div class="brand">PREPARE<br>THE FROG.</div><div class="edition">THE MARANELLO TRUTH SOCIETY<br>INDEPENDENT RESEARCH · DEPENDENT ON HOPIUM</div></header>
+  <div class="board">
+   <svg class="strings" aria-hidden="true" viewBox="0 0 900 430" preserveAspectRatio="none"><line x1="120" y1="80" x2="460" y2="250"/><line x1="120" y1="345" x2="760" y2="90"/><line x1="460" y1="30" x2="760" y2="330"/><line x1="110" y1="80" x2="760" y2="330"/><line x1="460" y1="250" x2="120" y2="345"/></svg>
+   <div class="left">
+    <article class="scrap note-a"><div class="eyebrow">EXHIBIT A / GEOMETRY</div><div class="track" role="img" aria-label="A loop-shaped racing circuit marked with a suspicious question mark"></div><h3>IF THE EARTH IS FLAT,<br>WHY ARE WE ALWAYS<br><span class="underline">GOING IN CIRCLES?</span></h3><p>Think about it. Then think less.</p></article>
+    <article class="scrap note-b"><div class="eyebrow">TRANSCRIPT / ALLEGED</div><h3>“WE ARE CHECKING.”</h3><p>Checking <u>what</u>?<br>Checking with <u>WHOM</u>?</p></article>
+   </div>
+   <article class="scrap hero"><div class="eyebrow">THE CHAMPIONSHIP WAS AN INSIDE JOB</div><h2>FERRARI<br>ALREADY WON.<em>THEY JUST<br>DON’T WANT<br>YOU TO KNOW.</em></h2><p>Bad strategy? Or a coordinated operation to suppress Italian greatness?</p><div class="circled">DO YOUR OWN RACE SEARCH.</div></article>
+   <div class="right">
+    <article class="scrap photo"><div class="frame" role="img" aria-label="A sleepless frog wearing a homemade tinfoil hat"><div class="frog"><span class="eye a"></span><span class="eye b"></span><span class="mouth"></span><span class="foil"></span></div></div><p>HE CONNECTED THE DOTS.<br>THE DOTS REQUESTED A TRANSFER.</p></article>
+    <div class="stamp">BIG TYRE<br>IS HIDING SOMETHING.</div>
+    <article class="scrap note-b" style="transform:rotate(-3deg)"><div class="eyebrow">UNANSWERED QUESTION</div><h3>WHY DOES “NEXT YEAR”<br>KEEP MOVING?</h3><p>That is exactly what they want.</p></article>
+   </div>
   </div>
+  <section class="file" aria-label="Classified hopium dossier">
+   <div class="case-row" aria-live="polite" aria-atomic="true">
+    <div class="evidence"><b id="truth-case">CASE FILE / THE HARD TYRE INCIDENT</b><span id="truth-event">They put hard tyres on a car that needed grip.</span></div>
+    <div><p class="theory" id="truth-theory">THE TYRES WEREN’T COLD. THE THERMOMETERS WERE COMPROMISED.</p><p class="fine" id="truth-detail">Big Tyre controls the temperature scale. Ferrari were the only team brave enough to challenge it.</p></div>
+   </div>
+   <div class="actions"><button type="button" id="truth-dose" class="cursor-interaction">I NEED MORE PROOF →</button><span class="aside">Another perfectly rational explanation<br>for your completely irrational faith.</span></div>
+  </section>
+  <footer><span>TRUST THE PLAN. EVEN WHEN THE PLAN SAYS “QUESTION?”</span><span>FAN PARODY / ALL CONSPIRACIES FABRICATED</span></footer>
+ </main>
+</div>
 </body>
-
 </html>
